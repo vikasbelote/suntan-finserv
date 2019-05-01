@@ -32,5 +32,4 @@ public class UserMapper {
 		createUserDto.setUserName(userDetail.getUserName());
 		return createUserDto;
 	}
-
 }

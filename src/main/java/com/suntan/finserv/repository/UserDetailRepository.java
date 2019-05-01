@@ -7,5 +7,6 @@ import com.suntan.finserv.entity.UserDetail;
 public interface UserDetailRepository extends JpaRepository<UserDetail, Long> {
 	
 	UserDetail findByUserNameAndUserPassword(String userName, String userPassword);
+	UserDetail findByUserId(Long userId);
 
 }

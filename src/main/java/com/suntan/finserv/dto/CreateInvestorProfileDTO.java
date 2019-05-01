@@ -9,7 +9,7 @@ public class CreateInvestorProfileDTO {
     private String middleName;
     private String lastName;
     private String emailAddress;
-    private Integer mobileNumber;
+    private Long mobileNumber;
     private String panCard;
     private Long adharNumber;
     private Long bankId;

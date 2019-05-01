@@ -36,10 +36,10 @@ public class Person {
 	@OneToOne(mappedBy = "person", cascade = CascadeType.ALL)
 	private UserDetail userDetail;
 	
-	@OneToMany(mappedBy = "person", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "person", cascade = CascadeType.ALL)
 	private List<Address> addresses;
 	
-	@OneToMany(mappedBy = "person", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "person", cascade = CascadeType.ALL)
 	private List<BankDetails> bankDetails;
 	
 	@Column(name = "person_first_name")
@@ -52,7 +52,7 @@ public class Person {
 	private String lastName;
 	
 	@Column(name = "person_mobile_number")
-	private Integer mobileNumber;
+	private Long mobileNumber;
 	
 	@Column(name = "person_email_address")
 	private String emailAddress;

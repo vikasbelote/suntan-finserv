@@ -28,5 +28,9 @@ public class UserService {
 				createUserDTO.getPassword());
 		return userMapper.userDetailToCreateUserDto(userDetail);
 	}
+	
+	public UserDetail getUserDetail(Long userId) {
+		return userDetailRepository.findByUserId(userId);
+	}
 
 }
