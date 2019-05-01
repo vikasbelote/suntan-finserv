@@ -34,7 +34,7 @@ public class InvestorProfileMapper {
 		person.setBankDetails(bankDetails);
 		
 		Address address = new Address();
-		address.setAddressCity(createInvestorProfileDTO.getAddressText());
+		address.setAddressText(createInvestorProfileDTO.getAddressText());
 		address.setAddressCity(createInvestorProfileDTO.getCity());
 		address.setAddressState(createInvestorProfileDTO.getState());
 		address.setAddressPinCode(createInvestorProfileDTO.getPincode());
