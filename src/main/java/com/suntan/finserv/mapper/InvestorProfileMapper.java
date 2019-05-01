@@ -25,6 +25,7 @@ public class InvestorProfileMapper {
 		person.setAdharNumber(createInvestorProfileDTO.getAdharNumber());
 		
 		BankDetails bank = new BankDetails();
+		bank.setPerson(person);
 		bank.setBankAccountNumber(createInvestorProfileDTO.getAccountNumber());
 		bank.setBankAccountType(createInvestorProfileDTO.getAccountType());
 		bank.setBankIfscCode(createInvestorProfileDTO.getIfscCode());
@@ -34,6 +35,7 @@ public class InvestorProfileMapper {
 		person.setBankDetails(bankDetails);
 		
 		Address address = new Address();
+		address.setPerson(person);
 		address.setAddressText(createInvestorProfileDTO.getAddressText());
 		address.setAddressCity(createInvestorProfileDTO.getCity());
 		address.setAddressState(createInvestorProfileDTO.getState());
